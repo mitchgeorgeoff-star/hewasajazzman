@@ -4,21 +4,12 @@ body {
     padding: 0;
     background-color: #cb2098f5;
 }
-
-/* Style for the main heading */
-this is quickly becoming a nightmare to edit, but here we go
 h1 {
     color: #ffffff;
     text-align: center;
     padding: 20px;
     background-color: #000000f5;
 }to target the main heading and make it look nice   
-/* Style for the paragraphs */white text on a black background, with some padding to make it look nice
-perhaps we can add some more styles later to make it look even better
-make it something that really stands out and grabs the attention of the participants
-hot pink background with white text, maybe add some borders or shadows to make it pop even more
-p that's a good idea, let's add some padding and maybe a border to make it look even better
-why not add a shadow to the text as well to make it really stand out and give it some depth
 paragraph {
     color: #ffffff;
     background-color: #000000f5;
@@ -27,25 +18,35 @@ paragraph {
     border: 2px solid #ffffff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }lets have some fun with the styles and make it look really engaging for the participants, we want to create an exciting atmosphere for them as they embark on this challenge!
-how do you feel about adding some animations to the headings and paragraphs to make them even more dynamic and engaging? we could have the text fade in or slide in from the sides to create a more interactive experience for the participants.
-LETS DO IT! we can use CSS animations to create some cool effects for the headings and paragraphs, maybe we can have the headings fade in and the paragraphs slide in from the left or right to make it more visually appealing and engaging for the participants.
-/* Animation for the main heading */
 @keyframes fadeIn {
     from { opacity: 0; }
-    to { opacity: 1; } THIS IS A SIMPLE FADE IN ANIMATION THAT WE CAN APPLY TO THE MAIN HEADING TO MAKE IT APPEAR GRACEFULLY ON THE PAGE.
-    FOOTER
 }
 h1 {
     animation: fadeIn 2s ease-in-out;
-
 /* Animation for the paragraphs */
 @keyframes slideIn {
     from { transform: translateX(-100%); opacity: 0; }
     to { transform: translateX(0); opacity: 1; } THIS IS A SLIDE IN ANIMATION THAT WE CAN APPLY TO THE PARAGRAPHS TO MAKE THEM SLIDE IN FROM THE LEFT AND APPEAR ON THE PAGE IN A DYNAMIC WAY.
 }LET'S APPLY THIS ANIMATION TO THE PARAGRAPHS TO MAKE THEM SLIDE IN AND CREATE A MORE ENGAGING EXPERIENCE FOR THE PARTICIPANTS.
-PARAGRAPH {
+    to { opacity: 1; }
+}
+
+/* Animation for the paragraphs */
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
     animation: slideIn 1s ease-out;
-}::highlight {
+}
+
+.highlight {
     background-color: #ff69b4;
     color: #ffffff;
+    padding: 5px;
 }
